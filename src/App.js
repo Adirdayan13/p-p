@@ -72,7 +72,7 @@ class App extends React.Component {
                 <h1>Web Developer.</h1>
                 <h2>Full Stack Developer</h2>
                 <br />
-                <img className="coding-main" src="/pictures/undraw_coding_6mjf.svg" />
+                <img className="coding-main" src="./pictures/undraw_coding_6mjf.svg" />
               </div>
             )}
             {this.state.projects && (
