@@ -12,7 +12,7 @@ function About() {
             Discover my abilities and skills in this portfolio.<br />
         I studied at Spiced Academy in Berlin, Germany.<br />
         I work with Javascript language, with frameworks such as</h3><br />
-            <MoveStuffAround />
+                <MoveStuffAround />
             <br /><br />
             <div className="grid">
                 <div className="front">
@@ -28,7 +28,7 @@ function About() {
                     <h6>Git, Github, Bash-Scripting, Heroku, Zeit, Surge, Jest, NPM, Yarn</h6>
                 </div>
             </div>
-        
+
 
         </div>
     )

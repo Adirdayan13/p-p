@@ -22,3 +22,7 @@ code {
   padding-top: 1%;
   width: 30%;
 }
+
+@-ms-viewport{
+  width: device-width;
+}

@@ -3,8 +3,9 @@ import './App.css';
 import './App.scss';
 import $ from 'jquery';
 import Contact from './Contact';
-import Projects from './Projects'
-import About from './About'
+import Projects from './Projects';
+import Home from './Home';
+import About from './About';
 import { isMobile } from 'react-device-detect';
 const ref = React.createRef();
 
@@ -21,6 +22,10 @@ class App extends React.Component {
     ref.current.scrollIntoView({
       block: 'start'
     });
+    $page.toggleClass('shazam');
+    $body.toggleClass('overflow noscroll');
+    // $content_inner.addClass('noscroll');
+
     if ($('.menu_items').hasClass('none')) {
       $('.menu_items').removeClass('none');
     } else {
@@ -28,9 +33,6 @@ class App extends React.Component {
         $('.menu_items').addClass('none');
       }, 500);
     }
-    $page.toggleClass('shazam');
-    $body.toggleClass('overflow noscroll');
-    $content_inner.addClass('noscroll');
 
     $('.content').on('click', function () {
       $page.removeClass('shazam');
@@ -47,7 +49,7 @@ class App extends React.Component {
       setTimeout(function () {
         $('.menu_items').addClass('none');
       }, 500);
-      
+
     });
   }
 
@@ -67,26 +69,16 @@ class App extends React.Component {
           </ul>
           <main className="content" style={{ height: '0px' }}>
             {this.state.home && (
-              <div className="content_inner">
-                <h1>Hi, I am Adir,</h1>
-                <h1>Web Developer.</h1>
-                <h2>Full Stack Developer</h2>
-                <br />
-                <img className="coding-main" src="./pictures/undraw_coding_6mjf.svg" />
-              </div>
+              <Home />
             )}
             {this.state.projects && (
-              <div className="content_inner">
-                <Projects />
-              </div>
+              <Projects />
             )}
             {this.state.about && (
               <About />
             )}
             {this.state.contact && (
-              <div className="content_inner">
-                <Contact />
-              </div>
+              <Contact />
             )}
           </main>
         </div>

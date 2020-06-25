@@ -12,6 +12,11 @@ form {
     position: sticky;
 }
 
+.button:focus {
+    border: none;
+    outline: none;
+}
+
 .linkedin,
 .github {
     transition: 0.5s;
@@ -24,6 +29,10 @@ form {
 .github:hover {
     color: #c07eb1;
     transform: rotate(360deg);
+}
+
+.pointer {
+    cursor: pointer;
 }
 
 .wrapper {

@@ -35,13 +35,24 @@ body {
   
   background-color: $whitey;
 }
+
+.inner {
+  // width: 90%;
+  // height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .content_inner {
-  height: 50%; 
+  height: 100vh; 
   overflow-y: auto;
   overflow-x: hidden;
   padding: 10px 20%;
   min-height: 100vh;
-  background: $whitey;
+  background: $whitey !important;
   display: flex;
   flex-direction: column;
   align-items: center;

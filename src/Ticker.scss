@@ -47,7 +47,7 @@ $duration: 25s;
     white-space: nowrap;
     // padding-right: 100%;
     box-sizing: content-box;
-
+    overflow: hidden;
     -webkit-animation-iteration-count: infinite; 
             animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
@@ -88,5 +88,5 @@ $duration: 25s;
 }
 
 
-body { padding-bottom: 5rem; }
+// body { padding-bottom: 5rem; }
 h1,h2,p {padding: 0 5%;}
