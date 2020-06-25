@@ -67,7 +67,7 @@ class Contact extends React.Component {
             )}
             {this.state.loading && (
               <img
-              src="/pictures/loading.svg"
+              src="./pictures/loading.svg"
               alt="loading"
               style={{ width: "50px" }}
             />
@@ -80,7 +80,7 @@ class Contact extends React.Component {
           <img
           alt="success"
           style={{ width: "100px" }}
-          src="/pictures/check.svg"
+          src="./pictures/check.svg"
           />
           <h1>Your Email was sent successfully.</h1>
         </div>

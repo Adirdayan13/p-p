@@ -19,13 +19,13 @@ render() {
         <div className="projects" ref={ref}>
             <h1>Projects</h1>
             <br />
-            <img className="coding" id="coding" src="/pictures/undraw_programming_2svr.svg" />
+            <img className="coding" id="coding" src="./pictures/undraw_programming_2svr.svg" />
             <div className="project">
                 <br />
                 <div className="containerr">
                     <div className="card">
                         <div className="imgBox">
-                            <img src="/pictures/projects/socialmedia.png" alt="socialnetwork" />
+                            <img src="./pictures/projects/socialmedia.png" alt="socialnetwork" />
                         </div>
                         <div className="details">
                             <h1>Social Network</h1>
@@ -41,7 +41,7 @@ render() {
                 <div className="containerr">
                     <div className="card">
                         <div className="imgBox">
-                            <img src="/pictures/projects/imageboard.png" alt="socialnetwork" />
+                            <img src="./pictures/projects/imageboard.png" alt="socialnetwork" />
                         </div>
                         <div className="details">
                             <h1 className="padding-bottom-dbl">Imageboard</h1>
@@ -56,7 +56,7 @@ render() {
                 <div className="containerr">
                     <div className="card">
                         <div className="imgBox">
-                            <img src="/pictures/projects/covid-19.png" alt="socialnetwork" />
+                            <img src="./pictures/projects/covid-19.png" alt="socialnetwork" />
                         </div>
                         <div className="details">
                             <h1>Covid-19 status</h1>
@@ -70,7 +70,7 @@ render() {
                 <div className="containerr">
                     <div className="card">
                         <div className="imgBox">
-                            <img src="/pictures/projects/petition.png" alt="socialnetwork" />
+                            <img src="./pictures/projects/petition.png" alt="socialnetwork" />
                         </div>
                         <div className="details">
                             <h1 className="padding-bottom">Petition</h1>
@@ -85,7 +85,7 @@ render() {
                 <div className="containerr">
                     <div className="card">
                         <div className="imgBox">
-                            <img src="/pictures/projects/spotify-search.png" alt="socialnetwork" />
+                            <img src="./pictures/projects/spotify-search.png" alt="socialnetwork" />
                         </div>
                         <div className="details">
                             <h1>Spotify Search</h1>
@@ -99,7 +99,7 @@ render() {
                 <div className="containerr">
                     <div className="card">
                         <div className="imgBox">
-                            <img src="/pictures/projects/vinyls.png" alt="socialnetwork" />
+                            <img src="./pictures/projects/vinyls.png" alt="socialnetwork" />
                         </div>
                         <div className="details">
                             <h1>Music collection</h1>
@@ -113,7 +113,7 @@ render() {
                 <div className="containerr">
                     <div className="card">
                         <div className="imgBox">
-                            <img src="/pictures/projects/connectfour.png" alt="socialnetwork" />
+                            <img src="./pictures/projects/connectfour.png" alt="socialnetwork" />
                         </div>
                         <div className="details">
                             <h1 className="padding-bottom-dbl">Connect Four</h1>
@@ -128,7 +128,7 @@ render() {
                 <div className="containerr">
                     <div className="card">
                         <div className="imgBox">
-                            <img src="/pictures/projects/weather.png" alt="socialnetwork" />
+                            <img src="./pictures/projects/weather.png" alt="socialnetwork" />
                         </div>
                         <div className="details">
                             <h1 className="padding-bottom-dbl">Weather</h1>
