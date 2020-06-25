@@ -77,6 +77,11 @@ textarea {
     border-bottom: none;
 }
 
+a:link,
+a:visited {
+    color: black;
+}
+
 @media screen and (max-width: 480px) {
     #mailSent {
         margin-top: 0 !important;

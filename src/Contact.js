@@ -90,8 +90,8 @@ class Contact extends React.Component {
         )}
         <br />
         <div className="icons">
-          <i className="github icon fa fa-github fa-2x"></i>
-          <i className="linkedin icon fa fa-linkedin fa-2x"></i>
+          <a href="https://github.com/adirdayan13" target="_blank"><i className="github icon fa fa-github fa-2x"></i></a>
+          <a href="www.linkedin.com/in/adir-dayan" target="_blank"><i className="linkedin icon fa fa-linkedin fa-2x"></i></a>
         </div>
       </React.Fragment>
     );
