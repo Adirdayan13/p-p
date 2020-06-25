@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/p-p/static/css/main.1963a5ac.chunk.css",
-    "main.js": "/p-p/static/js/main.95727285.chunk.js",
-    "main.js.map": "/p-p/static/js/main.95727285.chunk.js.map",
-    "runtime-main.js": "/p-p/static/js/runtime-main.7dd02532.js",
-    "runtime-main.js.map": "/p-p/static/js/runtime-main.7dd02532.js.map",
-    "static/css/2.af3c1da9.chunk.css": "/p-p/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.4d874904.chunk.js": "/p-p/static/js/2.4d874904.chunk.js",
-    "static/js/2.4d874904.chunk.js.map": "/p-p/static/js/2.4d874904.chunk.js.map",
-    "index.html": "/p-p/index.html",
-    "precache-manifest.0aa7163d7076665f37894f22877731f9.js": "/p-p/precache-manifest.0aa7163d7076665f37894f22877731f9.js",
-    "service-worker.js": "/p-p/service-worker.js",
-    "static/css/2.af3c1da9.chunk.css.map": "/p-p/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.1963a5ac.chunk.css.map": "/p-p/static/css/main.1963a5ac.chunk.css.map",
-    "static/js/2.4d874904.chunk.js.LICENSE.txt": "/p-p/static/js/2.4d874904.chunk.js.LICENSE.txt"
+    "main.css": "/adirdayan.me/static/css/main.1963a5ac.chunk.css",
+    "main.js": "/adirdayan.me/static/js/main.b8178e15.chunk.js",
+    "main.js.map": "/adirdayan.me/static/js/main.b8178e15.chunk.js.map",
+    "runtime-main.js": "/adirdayan.me/static/js/runtime-main.548c9a46.js",
+    "runtime-main.js.map": "/adirdayan.me/static/js/runtime-main.548c9a46.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/adirdayan.me/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.4d874904.chunk.js": "/adirdayan.me/static/js/2.4d874904.chunk.js",
+    "static/js/2.4d874904.chunk.js.map": "/adirdayan.me/static/js/2.4d874904.chunk.js.map",
+    "index.html": "/adirdayan.me/index.html",
+    "precache-manifest.a74b0d0119150b5a083d61c18499c1c3.js": "/adirdayan.me/precache-manifest.a74b0d0119150b5a083d61c18499c1c3.js",
+    "service-worker.js": "/adirdayan.me/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/adirdayan.me/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.1963a5ac.chunk.css.map": "/adirdayan.me/static/css/main.1963a5ac.chunk.css.map",
+    "static/js/2.4d874904.chunk.js.LICENSE.txt": "/adirdayan.me/static/js/2.4d874904.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.7dd02532.js",
+    "static/js/runtime-main.548c9a46.js",
     "static/css/2.af3c1da9.chunk.css",
     "static/js/2.4d874904.chunk.js",
     "static/css/main.1963a5ac.chunk.css",
-    "static/js/main.95727285.chunk.js"
+    "static/js/main.b8178e15.chunk.js"
   ]
 }
