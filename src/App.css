@@ -1,38 +1,90 @@
 .App {
+  text-align: center
+}
+
+h1 {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  font-size: 2.5rem;
+}
+
+h2 {
+  color: #535461;
+  font-size: 2rem;
+}
+
+.noscroll {
+  overflow: hidden;
+}
+
+.coding-main {
+  width: 550px;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: 1fr 180px;
+  grid-template-columns: 1fr 1fr;
+  height: auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.front, .back, .tools, .front h1, .back h1, .tools h1 {
+  transition: .4s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.front h1, .back h1, .tools h1 {
+  padding: 5px;
+}
+
+.front {
+  border: 2px solid #c07eb1;
+  padding: 2%;
+}
+
+.back {
+  border-bottom: 2px solid #c07eb1;
+  border-top: 2px solid #c07eb1;
+  border-right: 2px solid #c07eb1;
+  padding: 2%;
+}
+
+.tools {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  border-bottom: 2px solid #c07eb1;
+  border-left: 2px solid #c07eb1;
+  border-right: 2px solid #c07eb1;
+  height: fit-content;
+  padding: 2%;
+}
+
+.front:hover,
+.back:hover,
+.tools:hover {
+  background-color: #c07eb1;
+}
+
+.front:hover h2,
+.back:hover h2,
+.tools:hover h2 {
+  color: black;
+}
+
+@media screen and (max-width: 480px) {
+  .content_inner {
+    padding: 15% 2% !important;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  /* .content_inner:first-child {
+    padding: 15% 0 0 0 !important;
+  } */
+  .content_inner > img {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  .coding-main {
+    width: 100%;
+  }
+  .coding {
+    display: none;
   }
 }

@@ -1,0 +1,144 @@
+  .projects {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+    background: #f0f0f0;;
+  }
+
+  .project {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+
+  .containerr {
+      max-width: 1000px;
+      margin: 20px 1%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  }
+
+  .card {
+      position: relative;
+      margin: 20px 0;
+      width: 300px;
+      height: 400px;
+      background: #fff;
+      transform-style: preserve-3d;
+      transform: perspective(2000px);
+      transition: 1s;
+      box-shadow: inset 300px 0 50px rgba(0,0,0,.5);
+  }
+
+  .card:hover {
+    transform: perspective(2000px) rotate(-10deg);
+    box-shadow: inset 20px 0 50px rgba(0,0,0,.5);
+    z-index: 1000;
+  }
+
+  .card .imgBox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    transform-origin: left;
+    z-index: 1;
+    transition: 1s;
+  }
+
+  .card:hover .imgBox {
+    transform: rotateY(-135deg);
+  }
+
+  .card .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 20px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+  }
+
+  .padding-bottom {
+    margin-bottom: 20px;
+  }
+
+  .padding-bottom-dbl {
+    margin-bottom: 40px;
+  }
+
+  .btn {
+    width: 100px;
+    border-radius: 4px;
+    background-color: #c07eb1;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: #c07eb1;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .info {
+    background-color: cadetblue;
+  }
+
+.coding {
+  width: 1000px;
+  margin-bottom: 10%;
+}
+
+.scroll-to-top {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background: #c07eb1;
+  color: white;
+  margin-bottom: 10px;
+  z-index: 1000;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.scroll-to-top:hover {
+  background-color:  cadetblue;;
+}
+
+.scroll-to-top .icon {
+  z-index: 1;
+  margin-top: 10px;
+  animation: scrollTop 0.4s alternate ease infinite;
+}
+
+@keyframes scrollTop {
+  from {
+    transform: translateY(2px);
+  } to {
+    transform: translateY(-1px);
+  }
+}

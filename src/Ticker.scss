@@ -1,0 +1,92 @@
+* { box-sizing: border-box; }
+$duration: 25s;
+
+
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(90%, 0, 0);
+    transform: translate3d(90%, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-130%, 0, 0);
+    transform: translate3d(-130%, 0, 0);
+  }
+}
+
+@keyframes tickerphone {
+  0% {
+    -webkit-transform: translate3d(30%, 0, 0);
+    transform: translate3d(30%, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.ticker-wrap {
+  
+  // position: fixed;
+  // bottom: 0;
+  width: 100%;
+  // overflow: hidden;
+  height: 4rem;
+  // background-color: rgba(#000, 0.9); 
+  padding-left: 100%;
+  padding-right: 100%;
+  box-sizing: content-box;
+
+  .ticker {
+    display: inline-block;
+    height: 4rem;
+    line-height: 4rem;  
+    white-space: nowrap;
+    // padding-right: 100%;
+    box-sizing: content-box;
+
+    -webkit-animation-iteration-count: infinite; 
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+            -webkit-animation-name: ticker;
+            animation-name: ticker;
+    -webkit-animation-duration: $duration;
+            animation-duration: $duration;
+
+    &__item {
+
+      display: inline-block;
+
+      padding: 0 2rem;
+      font-size: 2rem;
+      color: white;   
+
+    }
+
+  }
+
+}
+
+.react-logo {
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+@media screen and (max-width: 480px) {
+  .ticker {
+    -webkit-animation-name: tickerphone !important;
+    animation-name: tickerphone !important;
+  }
+}
+
+
+body { padding-bottom: 5rem; }
+h1,h2,p {padding: 0 5%;}

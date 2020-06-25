@@ -1,0 +1,84 @@
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.icons {
+    display: flex;
+    width: 70px;
+    justify-content: space-evenly;
+    top: 92%;
+    position: sticky;
+}
+
+.linkedin,
+.github {
+    transition: 0.5s;
+}
+.linkedin:hover {
+    color: #c07eb1;
+    transform: rotate(-360deg);
+}
+
+.github:hover {
+    color: #c07eb1;
+    transform: rotate(360deg);
+}
+
+.wrapper {
+    width: 500px;
+    /* padding: 20px 0; */
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    width: 100%;
+}
+
+.ph-area {
+    position: absolute;
+    top: 0;
+    padding: 7px 0 0 13px;
+    transition: 400ms;
+    opacity: 0.5;
+    font-family: Merienda;
+}
+
+.row {
+    flex-direction: column;
+}
+
+.form-control:focus + .ph-area,
+.form-control:valid + .ph-area {
+    font-size: 90%;
+    transform: translate3d(0, -90%, 0);
+    opacity: 1;
+    color: black;
+}
+
+textarea {
+    resize: none;
+}
+
+.form-group:focus, textarea:focus, input:focus, label:focus {
+    outline: none !important;
+    outline-offset: none !important;
+}
+
+#mailSent {
+    margin-top: 10%;
+    text-align: center;
+}
+
+#mailSent h1 {
+    border-bottom: none;
+}
+
+@media screen and (max-width: 480px) {
+    #mailSent {
+        margin-top: 0 !important;
+    }
+}

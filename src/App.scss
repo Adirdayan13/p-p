@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+$red: #c07eb1;
+$brown: #584E4A;
+$whitey: #f0f0f0;
+
+$snap: cubic-bezier(1.000, 0.005, 0.240, 1.000);
+$bounce: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  overflow: auto;
+  background-color: black !important;
+}
+
+.overflow {
+  overflow-x: hidden;
+  background-color: $brown;
+}
+
+.page {
+  height: 100%;
+  background-color: $brown;
+}
+.content {
+  height: 200%;
+  transform-origin: top left;
+  transition: transform .7s $snap;
+  
+  background-color: $whitey;
+}
+.content_inner {
+  height: 50%; 
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 10px 20%;
+  min-height: 100vh;
+  background: $whitey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* basically all styling from now on */
+.menu_toggle {
+  z-index: 9000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  cursor: pointer;
+  width: 100px;
+  height: 80px;
+  background-color: $red;
+  border-bottom-right-radius: 100%;
+  
+  &:active {
+    i {
+      opacity: 0.8
+    }
+  }  
+  i {
+    color: $whitey;
+  }
+  .menu_open,
+  .menu_close {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -12px;
+    transition: transform .7s $snap;
+  }
+  .menu_open {
+    transform-origin: -100px -100px;
+  }
+  .menu_close {
+    transform: rotate(20deg);
+    transform-origin: -100px -160px;
+  }
+}
+
+input,
+textarea,
+button,
+select,
+a,
+.menu_items,
+li,
+.menu_toggle:active {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.none {
+  display: none !important;
+}
+
+.visible {
+  display: block;
+}
+
+.menu_items {
+  position: fixed;
+  bottom: 0;
+  left: 0px;
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  
+  li {
+    height: 60px;
+    margin-bottom: 30px;
+    transform: translateX(-300px);
+    transition: transform .7s 0s $snap;
+    margin-left: 20px; 
+    cursor: pointer;
+     &:nth-child(1){
+      margin-left: 20px;
+    }
+    &:nth-child(2){
+      margin-left: 30px;
+    }
+    &:nth-child(3){
+      margin-left: 50px;
+    }
+    &:nth-child(4){
+      margin-left: 60px;
+    }
+  }
+  a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: darken($whitey, 30%) !important;
+    transition: color .2s;
+    
+    .icon {
+      position: relative;
+      display: inline-block;
+      margin-right: 25px;
+      color: $whitey;
+
+      &:after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        content: '';
+        display: block;
+        width: 60px;
+        height: 60px;
+        margin-left: -32px;
+        margin-top: -32px;
+        border-radius: 100%;
+        border: 2px solid $whitey;
+        transition: border-color .2s;
+      }
+    }
+    
+    &:hover {
+      color: $whitey;
+      .icon {
+        &:hover {
+          color: $red;
+        }
+        &:after {
+          border-color: $red;
+        }
+      }
+    }
+    &:active {
+      .icon {
+        color: $red;
+      }
+    }
+  }
+}
+
+/* Let's open up the menu */
+.shazam {
+  .content {
+    transform: rotate(-30deg);
+  } 
+  .menu_open {
+    transform: rotate(-20deg);
+  }
+  .menu_close {
+    transform: rotate(0);
+  }
+  
+  .menu_items {
+    li {
+      transform: translateX(0);
+      transition: transform .35s .45s $bounce;
+    
+      &:nth-child(2){
+        transition-delay: .47s;
+      }
+      &:nth-child(3){
+        transition-delay: .48s;
+      }
+    }
+  }
+}
