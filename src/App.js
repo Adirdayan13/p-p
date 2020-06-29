@@ -24,32 +24,20 @@ class App extends React.Component {
     });
     $page.toggleClass('shazam');
     $body.toggleClass('overflow noscroll');
-    // $content_inner.addClass('noscroll');
-
-    if ($('.menu_items').hasClass('none')) {
-      $('.menu_items').removeClass('none');
-    } else {
-      setTimeout(function () {
-        $('.menu_items').addClass('none');
-      }, 500);
-    }
+    $('menu_items').toggleClass('none');
 
     $('.content').on('click', function () {
       $page.removeClass('shazam');
       $body.removeClass('noscroll');
       $content_inner.removeClass('noscroll');
-      setTimeout(function () {
-        $('.menu_items').addClass('none');
-      }, 500);
+      $('menu_items').toggleClass('none');
     });
+    
     $('.menu_items').on('click', function () {
       $page.removeClass('shazam');
       $body.removeClass('overflow noscroll');
       $content_inner.removeClass('noscroll');
-      setTimeout(function () {
-        $('.menu_items').addClass('none');
-      }, 500);
-
+      $('menu_items').toggleClass('none');
     });
   }
 
@@ -61,7 +49,7 @@ class App extends React.Component {
             <i className="menu_open fa fa-bars fa-lg"></i>
             <i className="menu_close fa fa-times fa-lg"></i>
           </span>
-          <ul className="menu_items none">
+          <ul className="menu_items">
             <li onClick={() => this.setState({ home: true, projects: false, about: false, contact: false })}><a><i className="icon fa fa-home fa-2x"></i> Home</a></li>
             <li onClick={() => this.setState({ projects: true, home: false, about: false, contact: false })}><a><i className="icon fa fa-coffee fa-2x"></i> Projects</a></li>
             <li onClick={() => this.setState({ about: true, home: false, projects: false, contact: false })}><a><i className="icon fa fa-user fa-2x"></i> About</a></li>
