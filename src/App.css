@@ -75,9 +75,6 @@ h2 {
   .content_inner {
     padding: 15% 2% !important;
   }
-  /* .content_inner:first-child {
-    padding: 15% 0 0 0 !important;
-  } */
   .content_inner > img {
     width: 100%;
   }
