@@ -112,6 +112,10 @@ li,
   display: none !important;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 .visible {
   display: block;
 }

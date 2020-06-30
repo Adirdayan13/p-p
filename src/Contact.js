@@ -57,7 +57,7 @@ class Contact extends React.Component {
                       <label htmlFor="name" className="ph-area">Name</label>
                     </div>
                     <div className="form-group">
-                      <input onChange={e => this.handleChange(e)} name="email" type="email" id="email" className="form-control" required />
+                      <input onChange={e => this.handleChange(e)} name="email" type="text" id="email" className="form-control" required />
                       <label htmlFor="email" className="ph-area">Email</label>
                     </div>
                     <div className="form-group">

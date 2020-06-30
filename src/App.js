@@ -18,26 +18,36 @@ class App extends React.Component {
   handleMenu() {
     const $page = $('.page');
     const $body = $('body');
+    const $menu_items = $('.menu_items');
     const $content_inner = $('content_inner');
     ref.current.scrollIntoView({
       block: 'start'
     });
     $page.toggleClass('shazam');
     $body.toggleClass('overflow noscroll');
-    $('menu_items').toggleClass('none');
+    setTimeout(function () {
+      // $menu_items.addClass('hidden');
+      $menu_items.toggleClass('hidden');
+    }, 500);
+
 
     $('.content').on('click', function () {
       $page.removeClass('shazam');
       $body.removeClass('noscroll');
       $content_inner.removeClass('noscroll');
-      $('menu_items').toggleClass('none');
+      setTimeout(function () {
+        $menu_items.addClass('hidden');
+      }, 500);
     });
-    
+
     $('.menu_items').on('click', function () {
       $page.removeClass('shazam');
       $body.removeClass('overflow noscroll');
       $content_inner.removeClass('noscroll');
-      $('menu_items').toggleClass('none');
+      setTimeout(function () {
+        // $menu_items.addClass('hidden');
+        $menu_items.addClass('hidden');
+      }, 500);
     });
   }
 
@@ -49,7 +59,7 @@ class App extends React.Component {
             <i className="menu_open fa fa-bars fa-lg"></i>
             <i className="menu_close fa fa-times fa-lg"></i>
           </span>
-          <ul className="menu_items">
+          <ul className="menu_items hidden">
             <li onClick={() => this.setState({ home: true, projects: false, about: false, contact: false })}><a><i className="icon fa fa-home fa-2x"></i> Home</a></li>
             <li onClick={() => this.setState({ projects: true, home: false, about: false, contact: false })}><a><i className="icon fa fa-coffee fa-2x"></i> Projects</a></li>
             <li onClick={() => this.setState({ about: true, home: false, projects: false, contact: false })}><a><i className="icon fa fa-user fa-2x"></i> About</a></li>

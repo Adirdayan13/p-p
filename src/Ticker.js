@@ -14,6 +14,11 @@ const MoveStuffAround = () => (
             <div className="ticker__item"><img style={{ width: "50px" }} src="./pictures/logos/node.png" alt="" /></div>
             <div className="ticker__item"><img style={{ width: "50px" }} src="./pictures/logos/handlebars.svg" alt="" /></div>
             <div className="ticker__item"><img style={{ width: "50px" }} src="./pictures/logos/postgresql.png" alt="" /></div>
+            <div className="ticker__item"><img style={{ width: "50px" }} src="./pictures/logos/icons8-git.svg" alt="" /></div>
+            <div className="ticker__item"><img style={{ width: "50px" }} src="./pictures/logos/icons8-heroku.svg" alt="" /></div>
+            <div className="ticker__item"><img style={{ width: "50px" }} src="./pictures/logos/icons8-npm.svg" alt="" /></div>
+            <div className="ticker__item"><img style={{ width: "50px" }} src="./pictures/logos/yarn.svg" alt="" /></div>
+            <div className="ticker__item"><img style={{ width: "50px" }} src="./pictures/logos/icons8-surge-logo.svg" alt="" /></div>
             <div className="ticker__item"><img style={{ width: "50px" }} src="./pictures/logos/icons8-aws.svg" alt="" /></div>
             <div className="ticker__item"><img style={{ width: "50px" }} src="./pictures/logos/icons8-bootstrap.svg" alt="" /></div>
             <div className="ticker__item"><img style={{ width: "50px" }} src="./pictures/logos/socketio.svg" alt="" /></div>
