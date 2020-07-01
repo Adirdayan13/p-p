@@ -29,13 +29,8 @@ $duration: 25s;
 }
 
 .ticker-wrap {
-  
-  // position: fixed;
-  // bottom: 0;
   width: 100%;
-  // overflow: hidden;
   height: 4rem;
-  // background-color: rgba(#000, 0.9); 
   padding-left: 100%;
   padding-right: 100%;
   box-sizing: content-box;
@@ -45,7 +40,6 @@ $duration: 25s;
     height: 4rem;
     line-height: 4rem;  
     white-space: nowrap;
-    // padding-right: 100%;
     box-sizing: content-box;
     overflow: hidden;
     -webkit-animation-iteration-count: infinite; 
@@ -68,7 +62,6 @@ $duration: 25s;
     }
 
   }
-
 }
 
 .react-logo {
@@ -88,5 +81,4 @@ $duration: 25s;
 }
 
 
-// body { padding-bottom: 5rem; }
 h1,h2,p {padding: 0 5%;}

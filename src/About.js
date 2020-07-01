@@ -25,7 +25,7 @@ function About() {
                 </div>
                 <div className="tools">
                     <h2 className="black"><strong>System tools</strong></h2><br />
-                    <h6>Git, Github, Bash-Scripting, Heroku, Zeit, Surge, Jest, NPM, Yarn</h6>
+                    <h6>Git, Github, Bash-Scripting, Hotjar, Heroku, Zeit, Surge, Jest, NPM, Yarn</h6>
                 </div>
             </div>
 

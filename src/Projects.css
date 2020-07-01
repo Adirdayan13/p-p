@@ -1,6 +1,5 @@
 .projects {
   display: flex;
-  /* flex-direction: column; */
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -71,10 +70,6 @@
   left: 0;
   box-sizing: border-box;
   padding: 20px;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
 }
 
 .padding-bottom {
