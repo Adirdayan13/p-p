@@ -47,19 +47,19 @@ class Projects extends React.Component {
                         <div className="containerr">
                             <div className="card">
                                 <div className="imgBox">
-                                    <img src="./pictures/projects/imageboard.png" alt="imageboard" />
+                                    <img src="./pictures/projects/bapaume.png" alt="imageboard" />
                                 </div>
                                 <div className="details">
-                                    <h1 className="padding-bottom-dbl">Imageboard</h1>
+                                    <h1 className="padding-bottom">Souterrains Bapaume</h1>
                                     <br />
-                                    <h4>A Platform to share images between people with an option to comment on pictures.
-              Built with Vue.JS</h4>
+                                    <h4>Personal Website. Underground tunnels of Bapaume city from World War II.<br />
+                                    Built with React.JS</h4>
                                     <br />
                                     <a
                                         className="btn"
                                         rel="noopener noreferrer"
                                         target="_blank"
-                                        href="https://adir-imageboard.herokuapp.com"
+                                        href="https://www.souterrains-bapaume.com"
                                     >Visit</a>
                                 </div>
                             </div>
@@ -83,6 +83,26 @@ class Projects extends React.Component {
                                 </div>
                             </div>
                         </div>
+                        <div className="containerr">
+                        <div className="card">
+                            <div className="imgBox">
+                                <img src="./pictures/projects/imageboard.png" alt="imageboard" />
+                            </div>
+                            <div className="details">
+                                <h1 className="padding-bottom-dbl">Imageboard</h1>
+                                <br />
+                                <h4>A Platform to share images between people with an option to comment on pictures.
+          Built with Vue.JS</h4>
+                                <br />
+                                <a
+                                    className="btn"
+                                    rel="noopener noreferrer"
+                                    target="_blank"
+                                    href="https://adir-imageboard.herokuapp.com"
+                                >Visit</a>
+                            </div>
+                        </div>
+                    </div>
                         <div className="containerr">
                             <div className="card">
                                 <div className="imgBox">
