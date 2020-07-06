@@ -1,11 +1,17 @@
 .projects {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 0 5%;
   background: #f0f0f0;;
+  text-align: center;
+  padding: 1% 0%;
 }
+
+/* .title-projects {
+  margin-right: 5%;
+} */
 
 .project {
   display: flex;
@@ -104,7 +110,7 @@ h2 {
 }
 
 .coding {
-width: 1000px;
+width: 80%;
 margin-bottom: 10%;
 }
 
@@ -136,4 +142,10 @@ from {
 } to {
   transform: translateY(-1px);
 }
+}
+
+@media screen and (max-width: 480px) {
+  .padding {
+    padding: 15% 5%;
+  }
 }

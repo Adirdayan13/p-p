@@ -95,4 +95,13 @@ a:visited {
     #mailSent {
         margin-top: 0 !important;
     }
+    .contact {
+        padding: 10% 15%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .contact {
+        padding: 20% 5% !important;
+    }
 }

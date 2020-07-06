@@ -2,6 +2,10 @@ h2 {
     color: #c07eb1;
 }
 
+.padding {
+    padding: 10px 20%;
+}
+
 @media screen and (max-width: 480px) {
     h2 {
         color: #c07eb1;
@@ -10,5 +14,7 @@ h2 {
     h3 {
         font-size: 1.3rem;
     }
-
+    .padding {
+        padding: 10px 5%;
+    }
 }

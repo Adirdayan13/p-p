@@ -18,7 +18,7 @@ h2 {
 }
 
 .coding-main {
-  width: 550px;
+  width: 60%;
 }
 
 .grid {
@@ -71,10 +71,22 @@ h2 {
   color: black;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
   .content_inner {
-    padding: 15% 2% !important;
+    padding: 15% 2% !important; 
   }
+  .home {
+    padding: 30% 5% !important;
+  }
+  .menu_items li {
+    margin-bottom: 10px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* .content_inner { */
+    /* padding: 15% 2%; */
+  /* } */
   .content_inner > img {
     width: 100%;
   }

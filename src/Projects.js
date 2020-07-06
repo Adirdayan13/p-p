@@ -18,7 +18,7 @@ class Projects extends React.Component {
         return (
             <div className="content_inner">
                 <div className="projects" ref={ref}>
-                    <h1>Projects</h1>
+                    <h1 className="title-projects">Projects</h1>
                     <br />
                     <img className="coding" id="coding" src="./pictures/undraw_programming_2svr.svg" />
                     <div className="project">

@@ -4,7 +4,7 @@ import './About.css'
 
 function About() {
     return (
-        <div className="content_inner">
+        <div className="content_inner padding">
             <h1>About Me</h1>
             <br />
             <h3>I am looking for a junior Full-Stack developer position in Berlin, Germany.<br />

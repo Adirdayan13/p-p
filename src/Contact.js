@@ -42,7 +42,7 @@ class Contact extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div className="content_inner">
+        <div className="content_inner contact">
           <h1>Let's stay in touch</h1>
           <br />
           <h4>For any further intrigues don't hesitate to contact me using the form below:</h4>
