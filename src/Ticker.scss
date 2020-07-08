@@ -37,7 +37,7 @@ $duration: 25s;
 
   .ticker {
     display: inline-block;
-    height: 4rem;
+    // height: 4rem;
     line-height: 4rem;  
     white-space: nowrap;
     box-sizing: content-box;
@@ -80,5 +80,10 @@ $duration: 25s;
   }
 }
 
-
 h1,h2,p {padding: 0 5%;}
+
+@media screen and (min-width: 2400px) {
+  .ticker__item img {
+    width: 100px !important;
+  }
+}

@@ -43,9 +43,9 @@ class Contact extends React.Component {
     return (
       <React.Fragment>
         <div className="content_inner contact">
-          <h1>Let's stay in touch</h1>
+          <h1 className="contact-title">Let's stay in touch</h1>
           <br />
-          <h4>For any further intrigues don't hesitate to contact me using the form below:</h4>
+          <h4 className="contact-text">For any further intrigues don't hesitate to contact me using the form below:</h4>
           <br />
           {!this.state.success && (
             <form method="POST" onSubmit={e => this.handleSubmit(e)}>

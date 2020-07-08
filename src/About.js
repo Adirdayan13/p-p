@@ -4,14 +4,14 @@ import './About.css'
 
 function About() {
     return (
-        <div className="content_inner padding">
-            <h1>About Me</h1>
+        <div className="content_inner padding about">
+            <h1 className="about-title">About Me</h1>
             <br />
-            <h3>I am looking for a junior Full-Stack developer position in Berlin, Germany.<br />
+            <h4 className="about-text">I am looking for a junior Full-Stack developer position in Berlin, Germany.<br />
             I am also available for freelance work to build a custom website.<br />
             Discover my abilities and skills in this portfolio.<br />
         I studied at Spiced Academy in Berlin, Germany.<br />
-        I work with Javascript language, with frameworks such as</h3><br />
+        I work with Javascript language, with frameworks such as</h4><br />
                 <MoveStuffAround />
             <br /><br />
             <div className="grid">
