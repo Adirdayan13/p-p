@@ -1,26 +1,152 @@
-form {
-    width: 100%;
+.contact-wrapper {
+    min-height: 100vh;
+    background: #f0f0f0;
+    text-align: center;
+}
+
+.title-first {
+    text-align: center;
+    padding: 0 30%;
+}
+
+.title-second {
+    font-size: 1.8rem;
+}
+
+.contact-div {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 1%;
+    align-items: center;
+    background: #f0f0f0;
+}
+
+.container {
+    width: 80%;
+}
+
+.container .row100 {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+
+.container .row100 .col {
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 10px;
+    transition: 0.5s;
+}
+
+.container .row100 .inputBox {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #c07eb1;
+}
+
+.container .row100 .inputBox input,
+.container .row100 .inputBox.textarea textarea {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 10px;
+    z-index: 1;
+    color: #000;
+    left: 0;
+}
+
+.container .row100 .inputBox .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.container .row100 .inputBox input:focus + .text,
+.container .row100 .inputBox input:valid + .text 
+{
+    top: -35px;
+    left: -10px;
+}
+
+.container .row100 .inputBox .line {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #c07eb1;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+.container .row100 .inputBox input:focus ~ .line,
+.container .row100 .inputBox input:valid ~ .line {
+    height: 100%;
+}
+
+.container .row100 .inputBox.textarea {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+.container .row100 .inputBox.textarea textarea {
+    height: 100%;
+    resize: none;
+}
+
+.container .row100 .inputBox textarea:focus ~ .text,
+.container .row100 .inputBox textarea:valid ~ .text 
+{
+    top: -35px;
+    left: -10px;
+}
+
+.container .row100 .inputBox textarea:focus ~ .line,
+.container .row100 .inputBox textarea:valid ~ .line {
+    height: 100%;
+}
+
+input[type="submit"] {
+    border: none;
+    padding: 7px 35px;
+    cursor: pointer;
+    outline: none;
+    background: #c07eb1;
+    color: #000;
+    font-size: 18px;
+    border-radius: 2px;
 }
 
 .icons {
     display: flex;
-    width: 70px;
-    justify-content: space-evenly;
-    top: 92%;
-    position: sticky;
-}
-
-.button:focus {
-    border: none;
-    outline: none;
+    /* width: 70px; */
+    justify-content: center;
+    padding-top: 5%;
+    /* top: 92%; */
+    /* position: sticky; */
 }
 
 .linkedin,
 .github {
+    margin: 5px;
     transition: 0.5s;
+    cursor: pointer;
 }
 .linkedin:hover {
     color: #c07eb1;
@@ -32,110 +158,22 @@ form {
     transform: rotate(360deg);
 }
 
-.pointer {
-    cursor: pointer;
-}
-
-.wrapper {
-    width: 500px;
-    /* padding: 20px 0; */
-}
-
-.form-group {
-    position: relative;
-    margin-bottom: 2.5rem !important;
-    text-align: left;
-    width: 100%;
-}
-
-.ph-area {
-    position: absolute;
-    top: 0;
-    padding: 7px 0 0 13px;
-    transition: 400ms;
-    opacity: 0.5;
-    font-family: Merienda;
-}
-
-.row {
-    flex-direction: column;
-}
-
-.form-control:focus + .ph-area,
-.form-control:valid + .ph-area {
-    font-size: 100%;
-    transform: translate3d(0, -100%, 0);
-    opacity: 1;
-    color: black;
-}
-
-textarea {
-    resize: none;
-}
-
-.form-group:focus, textarea:focus, input:focus, label:focus {
-    outline: none !important;
-    outline-offset: none !important;
-}
-
-#mailSent {
-    margin-top: 10%;
-    text-align: center;
-}
-
-#mailSent h1 {
-    border-bottom: none;
-}
-
-a:link,
-a:visited {
-    color: black;
-}
 
 @media screen and (max-width: 480px) {
-    #mailSent {
-        margin-top: 0 !important;
+    .title-second {
+        padding: 0 10px;
     }
-    .contact {
-        padding: 10% 15%;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .contact {
-        padding: 20% 5% !important;
+    .container {
+        width: 100%;
     }
 }
 
-@media screen and (min-width: 1500px) {
-    .contact h1 {
-        margin-top: 15px;
-        padding-bottom: 15px;
-    }
-    .contact h4 {
-        margin: 30px 0px;
-    }
-    .wrapper {
-        width: 30%;
-    }
-}
-
-@media screen and (min-width: 2500px) {
+@media only screen and (min-height: 750px) {
     form {
-        margin-top: 5%;
+        padding-top: 10%;
     }
-    .icons .fa-2x {
-        font-size: 4em;
+    .icons {
+        padding-top: 10%;
     }
 }
 
-@media screen and (min-width: 760px) and (max-width: 780px) {
-    .contact-title {
-        font-size: 4rem;
-        margin-top: 1%;
-        margin-bottom: 10%;
-    }
-    .contact-text {
-        font-size: 2.5rem;
-    }
-}
