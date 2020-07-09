@@ -27,7 +27,7 @@ class Contact extends React.Component {
     e.preventDefault();
     this.setState({ loading: true });
     try {
-      await axios.post('https://ovjkzf0d1j.execute-api.us-east-1.amazonaws.com/prod', { first: this.state.first, last: this.state.last, subject: this.state.subject, email: this.state.email, subject: this.state.subject, message: this.state.message })
+      // await axios.post('https://ovjkzf0d1j.execute-api.us-east-1.amazonaws.com/prod', { first: this.state.first, last: this.state.last, subject: this.state.subject, email: this.state.email, subject: this.state.subject, message: this.state.message })
       setTimeout(() => {
         this.setState({ success: true, loading: false });
       }, 2000);
@@ -49,10 +49,12 @@ class Contact extends React.Component {
         </div>
         <div className="contact-div">
           <div className="container">
-            <div className="title-second">
-              <h4>For any further intrigues don't hesitate to<br />
+            {!this.state.success && (
+              <div className="title-second">
+                <h4>For any further intrigues don't hesitate to<br />
         contact me using the form below:</h4>
-            </div>
+              </div>
+            )}
             {!this.state.success && (
               <form method="POST" onSubmit={e => this.handleSubmit(e)}>
                 <div className="row100">

@@ -153,6 +153,11 @@ input[type="submit"] {
     transform: rotate(360deg);
 }
 
+#mailSent {
+    padding-top: 10%;
+    min-height: 60vh;
+}
+
 
 @media screen and (max-width: 480px) {
     .title-second {
