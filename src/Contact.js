@@ -54,18 +54,18 @@ class Contact extends React.Component {
         contact me using the form below:</h4>
             </div>
             {!this.state.success && (
-              <form method="POST" onSubmit={e => this.handleSubmit(e)} autoComplete="off">
+              <form method="POST" onSubmit={e => this.handleSubmit(e)}>
                 <div className="row100">
                   <div className="col">
                     <div className="inputBox">
-                      <input autoComplete="new-password" onChange={e => this.handleChange(e)} type="text" name="first" required="required" />
+                      <input onChange={e => this.handleChange(e)} type="text" name="first" required="required" />
                       <span className="text">First Name</span>
                       <span className="line"></span>
                     </div>
                   </div>
                   <div className="col">
                     <div className="inputBox">
-                      <input autoComplete="new-password" onChange={e => this.handleChange(e)} type="text" name="last" required="required" />
+                      <input onChange={e => this.handleChange(e)} type="text" name="last" required="required" />
                       <span className="text">Last Name</span>
                       <span className="line"></span>
                     </div>
@@ -74,14 +74,14 @@ class Contact extends React.Component {
                 <div className="row100">
                   <div className="col">
                     <div className="inputBox">
-                      <input onChange={e => this.handleChange(e)} type="text" name="email" required="required" autoComplete="new-password" />
+                      <input onChange={e => this.handleChange(e)} type="text" name="email" required="required" />
                       <span className="text">Email</span>
                       <span className="line"></span>
                     </div>
                   </div>
                   <div className="col">
                     <div className="inputBox">
-                      <input onChange={e => this.handleChange(e)} type="text" name="subject" required="required" autoComplete="new-password" />
+                      <input onChange={e => this.handleChange(e)} type="text" name="subject" required="required" />
                       <span className="text">Subject</span>
                       <span className="line"></span>
                     </div>
