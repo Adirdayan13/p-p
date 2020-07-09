@@ -76,8 +76,7 @@
 }
 
 .container .row100 .inputBox input:focus + .text,
-.container .row100 .inputBox input:valid + .text 
-{
+.container .row100 .inputBox input:valid + .text {
     top: -35px;
     left: -10px;
 }
@@ -111,8 +110,7 @@
 }
 
 .container .row100 .inputBox textarea:focus ~ .text,
-.container .row100 .inputBox textarea:valid ~ .text 
-{
+.container .row100 .inputBox textarea:valid ~ .text {
     top: -35px;
     left: -10px;
 }
@@ -135,11 +133,8 @@ input[type="submit"] {
 
 .icons {
     display: flex;
-    /* width: 70px; */
     justify-content: center;
     padding-top: 5%;
-    /* top: 92%; */
-    /* position: sticky; */
 }
 
 .linkedin,

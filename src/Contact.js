@@ -27,7 +27,7 @@ class Contact extends React.Component {
     e.preventDefault();
     this.setState({ loading: true });
     try {
-      await axios.post('https://ovjkzf0d1j.execute-api.us-east-1.amazonaws.com/prod', { first: this.state.first, last: this.state.last, email: this.state.email, mobile: this.state.mobile, subject: this.state.subject, message: this.state.message })
+      await axios.post('https://ovjkzf0d1j.execute-api.us-east-1.amazonaws.com/prod', { first: this.state.first, last: this.state.last, subject: this.state.subject, email: this.state.email, subject: this.state.subject, message: this.state.message })
       setTimeout(() => {
         this.setState({ success: true, loading: false });
       }, 2000);
@@ -54,19 +54,19 @@ class Contact extends React.Component {
         contact me using the form below:</h4>
             </div>
             {!this.state.success && (
-              <form method="POST" onSubmit={e => this.handleSubmit(e)}>
+              <form method="POST" onSubmit={e => this.handleSubmit(e)} autoComplete="off">
                 <div className="row100">
                   <div className="col">
                     <div className="inputBox">
-                      <input onChange={e => this.handleChange(e)} type="text" name="first" required="required" />
-                      <span className="text">First Name *</span>
+                      <input autoComplete="new-password" onChange={e => this.handleChange(e)} type="text" name="first" required="required" />
+                      <span className="text">First Name</span>
                       <span className="line"></span>
                     </div>
                   </div>
                   <div className="col">
                     <div className="inputBox">
-                      <input onChange={e => this.handleChange(e)} type="text" name="last" required="required" />
-                      <span className="text">Last Name *</span>
+                      <input autoComplete="new-password" onChange={e => this.handleChange(e)} type="text" name="last" required="required" />
+                      <span className="text">Last Name</span>
                       <span className="line"></span>
                     </div>
                   </div>
@@ -74,15 +74,15 @@ class Contact extends React.Component {
                 <div className="row100">
                   <div className="col">
                     <div className="inputBox">
-                      <input onChange={e => this.handleChange(e)} type="text" name="email" required="required" />
-                      <span className="text">Email *</span>
+                      <input onChange={e => this.handleChange(e)} type="text" name="email" required="required" autoComplete="new-password" />
+                      <span className="text">Email</span>
                       <span className="line"></span>
                     </div>
                   </div>
                   <div className="col">
                     <div className="inputBox">
-                      <input onChange={e => this.handleChange(e)} type="text" name="mobile" required="required" />
-                      <span className="text">Mobile</span>
+                      <input onChange={e => this.handleChange(e)} type="text" name="subject" required="required" autoComplete="new-password" />
+                      <span className="text">Subject</span>
                       <span className="line"></span>
                     </div>
                   </div>
@@ -91,7 +91,7 @@ class Contact extends React.Component {
                   <div className="col">
                     <div className="inputBox textarea">
                       <textarea onChange={e => this.handleChange(e)} required="required" name="message"></textarea>
-                      <span className="text">Type your message Here... *</span>
+                      <span className="text">Type your message Here...</span>
                       <span className="line"></span>
                     </div>
                   </div>
