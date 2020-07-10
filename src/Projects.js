@@ -51,13 +51,13 @@ class Projects extends React.Component {
                         <div className="containerr">
                             <div className="card">
                                 <div className="imgBox">
-                                    <img src="./pictures/projects/socialmedia.png" alt="socialnetwork" />
+                                    <img src="/pictures/projects/socialmedia.png" alt="socialnetwork" />
                                 </div>
                                 <div className="details">
                                     <h1>Social Network</h1>
                                     <h4>A social media platform to find people, connect with them, live chat, read the news, share albums and more.
               Built with React.JS</h4>
-              <br />
+                                    <br />
                                     <button
                                         className="button"
                                         onClick={e => this.handleClick(e, "socialnetwork")}
@@ -69,7 +69,7 @@ class Projects extends React.Component {
                         <div className="containerr">
                             <div className="card">
                                 <div className="imgBox">
-                                    <img src="./pictures/projects/bapaume.png" alt="imageboard" />
+                                    <img src="/pictures/projects/bapaume.png" alt="imageboard" />
                                 </div>
                                 <div className="details">
                                     <h1>Souterrains Bapaume</h1>
@@ -87,7 +87,7 @@ class Projects extends React.Component {
                         <div className="containerr">
                             <div className="card">
                                 <div className="imgBox">
-                                    <img src="./pictures/projects/covid-19.png" alt="covid-19" />
+                                    <img src="/pictures/projects/covid-19.png" alt="covid-19" />
                                 </div>
                                 <div className="details">
                                     <h1>Covid-19 status</h1>
@@ -103,7 +103,7 @@ class Projects extends React.Component {
                         <div className="containerr">
                             <div className="card">
                                 <div className="imgBox">
-                                    <img src="./pictures/projects/imageboard.png" alt="imageboard" />
+                                    <img src="/pictures/projects/imageboard.png" alt="imageboard" />
                                 </div>
                                 <div className="details">
                                     <h1 className="padding-bottom">Imageboard</h1>
@@ -121,7 +121,7 @@ class Projects extends React.Component {
                         <div className="containerr">
                             <div className="card">
                                 <div className="imgBox">
-                                    <img src="./pictures/projects/petition.png" alt="petition" />
+                                    <img src="/pictures/projects/petition.png" alt="petition" />
                                 </div>
                                 <div className="details">
                                     <h1 className="padding-bottom">Petition</h1>
@@ -139,7 +139,7 @@ class Projects extends React.Component {
                         <div className="containerr">
                             <div className="card">
                                 <div className="imgBox">
-                                    <img src="./pictures/projects/spotify-search.png" alt="spotify" />
+                                    <img src="/pictures/projects/spotify-search.png" alt="spotify" />
                                 </div>
                                 <div className="details">
                                     <h1>Spotify Search</h1>
@@ -155,13 +155,12 @@ class Projects extends React.Component {
                         <div className="containerr">
                             <div className="card">
                                 <div className="imgBox">
-                                    <img src="./pictures/projects/vinyls.png" alt="vinyls" />
+                                    <img src="/pictures/projects/vinyls.png" alt="vinyls" />
                                 </div>
                                 <div className="details">
                                     <h1>Music collection</h1>
                                     <h4>Platform to create your own music collection to keep track of your music by adding / editing / deleting and searching options.
                         Built with Handlebars</h4>
-                                    <br />
                                     <button
                                         className="button"
                                         onClick={e => this.handleClick(e, "vinyls")}
@@ -172,7 +171,7 @@ class Projects extends React.Component {
                         <div className="containerr">
                             <div className="card">
                                 <div className="imgBox">
-                                    <img src="./pictures/projects/connectfour.png" alt="connect four" />
+                                    <img src="/pictures/projects/connectfour.png" alt="connect four" />
                                 </div>
                                 <div className="details">
                                     <h1 className="padding-bottom">Connect Four</h1>

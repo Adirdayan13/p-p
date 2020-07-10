@@ -7,6 +7,7 @@ import Projects from './Projects';
 import Home from './Home';
 import About from './About';
 import { isMobile } from 'react-device-detect';
+
 const ref = React.createRef();
 
 class App extends React.Component {

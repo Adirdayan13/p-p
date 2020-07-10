@@ -10,7 +10,7 @@ function Home() {
                 <h1 className="home-title">Web Developer.</h1>
                 <h2 className="home-title-small">Full Stack Developer</h2>
                 <br />
-                <img className="coding-main" src="./pictures/undraw_coding_6mjf.svg" />
+                <img className="coding-main" src="/pictures/undraw_coding_6mjf.svg" />
             </div>
         </div>
     )
