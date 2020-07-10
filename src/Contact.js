@@ -9,6 +9,10 @@ class Contact extends React.Component {
     this.state = { loading: false };
   }
 
+  componentDidMount() {
+
+  }
+
   handleChange(e) {
     this.setState({
       [e.target.name]: e.target.value
@@ -56,18 +60,20 @@ class Contact extends React.Component {
               </div>
             )}
             {!this.state.success && (
-              <form method="POST" onSubmit={e => this.handleSubmit(e)}>
+              <form method="POST" autoComplete="off" onSubmit={e => this.handleSubmit(e)} id="contact-form">
+              <input id="username" style={{ display: 'none'}} type="tell" name="username" autoComplete="off"/>
+              <input id="password" style={{ display: 'none'}} type="password" name="password" autoComplete="off" />
                 <div className="row100">
                   <div className="col">
                     <div className="inputBox">
-                      <input onChange={e => this.handleChange(e)} type="text" name="first" required="required" />
+                      <input onChange={e => this.handleChange(e)} type="text" name="first" required="required" autoComplete="new-password" />
                       <span className="text">First Name</span>
                       <span className="line"></span>
                     </div>
                   </div>
                   <div className="col">
                     <div className="inputBox">
-                      <input onChange={e => this.handleChange(e)} type="text" name="last" required="required" />
+                      <input onChange={e => this.handleChange(e)} type="text" name="last" required="required" autoComplete="new-password" />
                       <span className="text">Last Name</span>
                       <span className="line"></span>
                     </div>
@@ -76,7 +82,7 @@ class Contact extends React.Component {
                 <div className="row100">
                   <div className="col">
                     <div className="inputBox">
-                      <input onChange={e => this.handleChange(e)} type="text" name="email" required="required" />
+                      <input onChange={e => this.handleChange(e)} type="text" name="email" required="required"  />
                       <span className="text">Email</span>
                       <span className="line"></span>
                     </div>
