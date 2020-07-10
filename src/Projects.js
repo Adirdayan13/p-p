@@ -55,12 +55,11 @@ class Projects extends React.Component {
                                 </div>
                                 <div className="details">
                                     <h1>Social Network</h1>
-                                    <br />
-                                    <h3>A social media platform to find people, connect with them, live chat, read the news, share albums and more.
-              Built with React.JS</h3>
-                                    <br /><br />
+                                    <h4>A social media platform to find people, connect with them, live chat, read the news, share albums and more.
+              Built with React.JS</h4>
+              <br />
                                     <button
-                                        className="btn"
+                                        className="button"
                                         onClick={e => this.handleClick(e, "socialnetwork")}
                                     >Visit</button>
                                     <br />
@@ -73,13 +72,12 @@ class Projects extends React.Component {
                                     <img src="./pictures/projects/bapaume.png" alt="imageboard" />
                                 </div>
                                 <div className="details">
-                                    <h1 className="padding-bottom">Souterrains Bapaume</h1>
-                                    <br />
-                                    <h3>Personal Website. Underground tunnels of Bapaume city from World War II.<br />
-                                    Built with React.JS</h3>
+                                    <h1>Souterrains Bapaume</h1>
+                                    <h4>Personal Website. Underground tunnels of Bapaume city from World War II.<br />
+                                    Built with React.JS</h4>
                                     <br />
                                     <button
-                                        className="btn"
+                                        className="button"
                                         onClick={e => this.handleClick(e, "souterrains")}
                                     >Visit</button>
 
@@ -93,12 +91,10 @@ class Projects extends React.Component {
                                 </div>
                                 <div className="details">
                                     <h1>Covid-19 status</h1>
-                                    <br /><br />
-                                    <h3>A website to keep track of corona virus cases status worldwide with an option to filter confirmed / recovered / deaths cases.
-              Built with React.JS</h3>
-                                    <br />
+                                    <h4>A website to keep track of corona virus cases status worldwide with an option to filter confirmed / recovered / deaths cases.
+              Built with React.JS</h4>
                                     <button
-                                        className="btn"
+                                        className="button"
                                         onClick={e => this.handleClick(e, "covid-19")}
                                     >Visit</button>
                                 </div>
@@ -110,13 +106,13 @@ class Projects extends React.Component {
                                     <img src="./pictures/projects/imageboard.png" alt="imageboard" />
                                 </div>
                                 <div className="details">
-                                    <h1 className="padding-bottom-dbl">Imageboard</h1>
+                                    <h1 className="padding-bottom">Imageboard</h1>
                                     <br />
-                                    <h3>A Platform to share images between people with an option to comment on pictures.
-          Built with Vue.JS</h3>
+                                    <h4>A Platform to share images between people with an option to comment on pictures.
+          Built with Vue.JS</h4>
                                     <br />
                                     <button
-                                        className="btn"
+                                        className="button"
                                         onClick={e => this.handleClick(e, "imageboard")}
                                     >Visit</button>
                                 </div>
@@ -130,11 +126,11 @@ class Projects extends React.Component {
                                 <div className="details">
                                     <h1 className="padding-bottom">Petition</h1>
                                     <br />
-                                    <h3>Platform that enables gathering signatures from people for a cause with the analytical options.
-              Built with Handlebars</h3>
-                                    <br /><br />
+                                    <h4>Platform that enables gathering signatures from people for a cause with the analytical options.
+              Built with Handlebars</h4>
+                                    <br />
                                     <button
-                                        className="btn"
+                                        className="button"
                                         onClick={e => this.handleClick(e, "petition")}
                                     >Visit</button>
                                 </div>
@@ -147,12 +143,10 @@ class Projects extends React.Component {
                                 </div>
                                 <div className="details">
                                     <h1>Spotify Search</h1>
-                                    <br /><br />
-                                    <h3>Spotify Search is a search enginge for spotify music with option to listen tracks preview without registration.
-                        Built with Handlebars</h3>
-                                    <br />
+                                    <h4>Spotify Search is a search enginge for spotify music with option to listen tracks preview without registration.
+                        Built with Handlebars</h4>
                                     <button
-                                        className="btn"
+                                        className="button"
                                         onClick={e => this.handleClick(e, "spotify")}
                                     >Visit</button>
                                 </div>
@@ -165,12 +159,11 @@ class Projects extends React.Component {
                                 </div>
                                 <div className="details">
                                     <h1>Music collection</h1>
-                                    <br />
-                                    <h3>Platform to create your own music collection to keep track of your music by adding / editing / deleting and searching options.
-                        Built with Handlebars</h3>
+                                    <h4>Platform to create your own music collection to keep track of your music by adding / editing / deleting and searching options.
+                        Built with Handlebars</h4>
                                     <br />
                                     <button
-                                        className="btn"
+                                        className="button"
                                         onClick={e => this.handleClick(e, "vinyls")}
                                     >Visit</button>
                                 </div>
@@ -182,13 +175,13 @@ class Projects extends React.Component {
                                     <img src="./pictures/projects/connectfour.png" alt="connect four" />
                                 </div>
                                 <div className="details">
-                                    <h1 className="padding-bottom-dbl">Connect Four</h1>
+                                    <h1 className="padding-bottom">Connect Four</h1>
                                     <br />
-                                    <h3>Connect four is a two player connection game.
-                        Built with Jquery</h3>
+                                    <h4>Connect four is a two player connection game.
+                        Built with Jquery</h4>
                                     <br />
                                     <button
-                                        className="btn"
+                                        className="button"
                                         onClick={e => this.handleClick(e, "connect-four")}
                                     >Visit</button>
                                 </div>
@@ -200,13 +193,13 @@ class Projects extends React.Component {
                                     <img src="/pictures/projects/weather.png" alt="weather" />
                                 </div>
                                 <div className="details">
-                                    <h1 className="padding-bottom-dbl">Weather</h1>
+                                    <h1 className="padding-bottom">Weather</h1>
                                     <br />
-                                    <h3>Weather app provides a real time forcast for any location in the world.
-                            Built with React.JS</h3>
+                                    <h4>Weather app provides a real time forcast for any location in the world.
+                            Built with React.JS</h4>
                                     <br /><br />
                                     <button
-                                        className="btn"
+                                        className="button"
                                         onClick={e => this.handleClick(e, "weather")}
                                     >Visit</button>
                                 </div>

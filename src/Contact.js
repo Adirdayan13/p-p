@@ -1,7 +1,6 @@
 import React from 'react';
 import './Contact.css';
 import axios from "axios";
-import $ from 'jquery';
 
 class Contact extends React.Component {
   constructor(props) {
@@ -27,11 +26,10 @@ class Contact extends React.Component {
   }
 
   async handleSubmit(e) {
-    var $input = $('input');
     e.preventDefault();
     this.setState({ loading: true });
     try {
-      await axios.post('https://ovjkzf0d1j.execute-api.us-east-1.amazonaws.com/prod', { first: this.state.first, last: this.state.last, subject: this.state.subject, email: this.state.email, subject: this.state.subject, message: this.state.message })
+      await axios.post('https://ovjkzf0d1j.execute-api.us-east-1.amazonaws.com/prod', { first: this.state.first, last: this.state.last, subject: this.state.subject, email: this.state.email, message: this.state.message })
       setTimeout(() => {
         this.setState({ success: true, loading: false });
       }, 2000);

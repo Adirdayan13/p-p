@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserView, isMobile } from "react-device-detect";
-import DeviceOrientation, { Orientation } from 'react-screen-orientation'
+import DeviceOrientation, { Orientation } from 'react-screen-orientation';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 ReactDOM.render(
