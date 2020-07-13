@@ -19,5 +19,3 @@ class ScrollToTop extends Component {
 };
 
 export default ScrollToTop;
-
-// <i className="icon fas fa-chevron-up"></i>

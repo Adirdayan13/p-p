@@ -43,9 +43,11 @@ class Projects extends React.Component {
         return (
             <div className="content_inner">
                 <div className="projects" ref={ref}>
-                    <h1 className="title-projects">Projects</h1>
-                    <br />
-                    <img className="coding" id="coding" src="./pictures/undraw_programming_2svr.svg" />
+                    <div className="projects-head">
+                        <h1 className="title-projects">Projects</h1>
+                        <br />
+                        <img className="coding" id="coding" src="./pictures/undraw_programming_2svr.svg" />
+                    </div>
                     <div className="project">
                         <br />
                         <div className="containerr">
@@ -205,11 +207,13 @@ class Projects extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className="scroll-to-top cursor-pointer text-center" onClick={() => ref.current.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    })}>
-                        <i className="icon fa fa-chevron-up" ></i>
+                    <div className="up-wrapper">
+                        <div className="scroll-to-top cursor-pointer text-center" onClick={() => ref.current.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        })}>
+                            <i className="icon fa fa-chevron-up" ></i>
+                        </div>
                     </div>
                 </div>
             </div>
