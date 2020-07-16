@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import './App.css';
 import './App.scss';
 import $ from 'jquery';
@@ -6,7 +6,6 @@ import Contact from './Contact';
 import Projects from './Projects';
 import Home from './Home';
 import About from './About';
-import { isMobile } from 'react-device-detect';
 
 const ref = React.createRef();
 

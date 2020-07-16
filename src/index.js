@@ -10,22 +10,22 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   <React.StrictMode>
-  <BrowserView>
-  <App />
-</BrowserView>
-{isMobile ?
-  <DeviceOrientation lockOrientation={'landscape'}>
-  <Orientation orientation='landscape' alwaysRender={false}>
-  <div className="phone-div">
-  <h1 style={{ color: "#c07eb1" }}>I like to be vertical</h1>
-  <img className="phone" src="/pictures/rotating-phone.svg" />
-  </div>
-  </Orientation>
-  <Orientation orientation='portrait' alwaysRender={false}>
-  <App />
-  </Orientation>
-  </DeviceOrientation>
- : null }
+    <BrowserView>
+      <App />
+    </BrowserView>
+    {isMobile ?
+      <DeviceOrientation lockOrientation={'landscape'}>
+        <Orientation orientation='landscape' alwaysRender={false}>
+          <div className="phone-div">
+            <h1 style={{ color: "#c07eb1" }}>I like to be vertical</h1>
+            <img className="phone" src="/pictures/rotating-phone.svg" alt="phone-rotation" />
+          </div>
+        </Orientation>
+        <Orientation orientation='portrait' alwaysRender={false}>
+          <App />
+        </Orientation>
+      </DeviceOrientation>
+      : null}
 
   </React.StrictMode>,
   document.getElementById('root')

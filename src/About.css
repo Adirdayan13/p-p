@@ -6,6 +6,10 @@ h2 {
     padding: 10px 20%;
 }
 
+.about-text {
+    font-size: 1.5rem;
+}
+
 @media screen and (max-width: 480px) {
     h2 {
         color: #c07eb1;
@@ -15,7 +19,10 @@ h2 {
         font-size: 1.3rem;
     }
     .padding {
-        padding: 10px 5%;
+        padding: 15% 5%;
+    }
+    .about-text {
+        font-size: 1.2rem;
     }
 }
 
@@ -43,11 +50,26 @@ h2 {
     }
 }
 
-@media screen and (min-width: 760px) and (max-width: 780px) {
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
     .about-title {
         font-size: 4rem;
     }
     .about-text {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
+    .back h6,
+    .front h6,
+    .tools h6 {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* h6 {
+        font-size: 2rem;
+    } */
+
 }

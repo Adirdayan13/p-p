@@ -37,8 +37,6 @@ body {
 }
 
 .inner {
-  // width: 90%;
-  // height: 100vh;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -50,7 +48,6 @@ body {
   height: 100vh; 
   overflow-y: auto;
   overflow-x: hidden;
-  // padding: 10px 20%;
   min-height: 100vh;
   background: $whitey !important;
   display: flex;
