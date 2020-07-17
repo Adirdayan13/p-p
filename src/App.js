@@ -65,7 +65,7 @@ class App extends React.Component {
             <li onClick={() => this.setState({ about: true, home: false, projects: false, contact: false })}><a><i className="icon fa fa-user fa-2x"></i> About</a></li>
             <li onClick={() => this.setState({ contact: true, home: false, projects: false, about: false })}><a><i className="icon fa fa-paper-plane fa-2x"></i> Contact</a></li>
           </ul>
-          <main className="content" style={{ height: '0px' }}>
+          <main className="content">
             {this.state.home && (
               <Home />
             )}
