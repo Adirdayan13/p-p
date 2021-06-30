@@ -49,7 +49,7 @@ class Contact extends React.Component {
           <h1>Contact Me</h1>
           <br /><br />
         </div>
-        <div className="contact-div">
+        <div className="contact-div mb-2">
           <div className="container">
             {!this.state.success && (
               <div className="title-second">
