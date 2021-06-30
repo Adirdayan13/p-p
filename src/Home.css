@@ -1,0 +1,11 @@
+.titles {
+  width: 100%;
+}
+
+.home-title,
+.home-title-small {
+  width: fit-content;
+  width: -moz-fit-content;
+  margin-right: auto;
+  margin-left: auto;
+}

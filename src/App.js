@@ -1,18 +1,20 @@
 import React from "react";
-import "./App.css";
-import "./App.scss";
 import $ from "jquery";
 import Contact from "./Contact";
 import Projects from "./Projects";
 import Home from "./Home";
 import About from "./About";
+import "./App.css";
+import "./App.scss";
 
 const ref = React.createRef();
 
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { home: true, projects: false, about: false, contact: false };
+    this.state = {
+      pages: { home: true }
+    };
   }
 
   handleMenu() {
@@ -48,6 +50,10 @@ class App extends React.Component {
     });
   }
 
+  handlePage(page) {
+    this.setState({ pages: { [page]: true } })
+  }
+
   render() {
     return (
       <div className="App" ref={ref}>
@@ -61,68 +67,24 @@ class App extends React.Component {
             <i className="menu_close fa fa-times fa-lg"></i>
           </span>
           <ul className="menu_items hidden">
-            <li
-              onClick={() =>
-                this.setState({
-                  home: true,
-                  projects: false,
-                  about: false,
-                  contact: false,
-                })
-              }
-            >
-              <a>
-                <i className="icon fa fa-home fa-2x"></i> Home
-              </a>
+            <li onClick={() => this.handlePage("home")}>
+              <a><i className="icon fa fa-home fa-2x"></i>Home</a>
             </li>
-            <li
-              onClick={() =>
-                this.setState({
-                  projects: true,
-                  home: false,
-                  about: false,
-                  contact: false,
-                })
-              }
-            >
-              <a>
-                <i className="icon fa fa-coffee fa-2x"></i> Projects
-              </a>
+            <li onClick={() => this.handlePage("projects")}>
+              <a><i className="icon fa fa-coffee fa-2x"></i>Projects</a>
             </li>
-            <li
-              onClick={() =>
-                this.setState({
-                  about: true,
-                  home: false,
-                  projects: false,
-                  contact: false,
-                })
-              }
-            >
-              <a>
-                <i className="icon fa fa-user fa-2x"></i> About
-              </a>
+            <li onClick={() => this.handlePage("about")}>
+              <a><i className="icon fa fa-user fa-2x"></i>About</a>
             </li>
-            <li
-              onClick={() =>
-                this.setState({
-                  contact: true,
-                  home: false,
-                  projects: false,
-                  about: false,
-                })
-              }
-            >
-              <a>
-                <i className="icon fa fa-paper-plane fa-2x"></i> Contact
-              </a>
+            <li onClick={() => this.handlePage("contact")}>
+              <a><i className="icon fa fa-paper-plane fa-2x"></i>Contact</a>
             </li>
           </ul>
           <main className="content">
-            {this.state.home && <Home />}
-            {this.state.projects && <Projects />}
-            {this.state.about && <About />}
-            {this.state.contact && <Contact />}
+            {this.state.pages.home && <Home />}
+            {this.state.pages.projects && <Projects />}
+            {this.state.pages.about && <About />}
+            {this.state.pages.contact && <Contact />}
           </main>
         </div>
       </div>

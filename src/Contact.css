@@ -1,192 +1,189 @@
 .contact-wrapper {
-    min-height: 100vh;
-    background: #f0f0f0;
-    text-align: center;
+  min-height: 100vh;
+  background: #f0f0f0;
+  text-align: center;
 }
 
 .title-first {
-    text-align: center;
-    padding: 0 40%;
+  text-align: center;
+  padding: 0 40%;
 }
 
 .title-second {
-    font-size: 1.8rem;
+  font-size: 1.8rem;
 }
 
 .contact-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f0f0f0;
 }
 
 .container {
-    width: 80%;
+  width: 80%;
 }
 
 .container .row100 {
-    position: relative;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .container .row100 .col {
-    position: relative;
-    width: 100%;
-    padding: 0 10px;
-    margin: 30px 0 10px;
-    transition: 0.5s;
+  position: relative;
+  width: 100%;
+  padding: 0 10px;
+  margin: 30px 0 10px;
+  transition: 0.5s;
 }
 
 .container .row100 .inputBox {
-    position: relative;
-    width: 100%;
-    height: 40px;
-    color: #c07eb1;
+  position: relative;
+  width: 100%;
+  height: 40px;
+  color: #c07eb1;
 }
 
 .container .row100 .inputBox input,
 .container .row100 .inputBox.textarea textarea {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    box-shadow: none;
-    border: none;
-    outline: none;
-    font-size: 18px;
-    padding: 0 10px;
-    z-index: 1;
-    color: #000;
-    left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 0 10px;
+  z-index: 1;
+  color: #000;
+  left: 0;
 }
 
 .container .row100 .inputBox .text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    line-height: 40px;
-    font-size: 18px;
-    padding: 0 10px;
-    display: block;
-    transition: 0.5s;
-    pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 40px;
+  font-size: 18px;
+  padding: 0 10px;
+  display: block;
+  transition: 0.5s;
+  pointer-events: none;
 }
 
 .container .row100 .inputBox input:focus + .text,
 .container .row100 .inputBox input:valid + .text {
-    top: -35px;
-    left: -10px;
+  top: -35px;
+  left: -10px;
 }
 
 .container .row100 .inputBox .line {
-    position: absolute;
-    bottom: 0;
-    display: block;
-    width: 100%;
-    height: 2px;
-    background: #c07eb1;
-    transition: 0.5s;
-    border-radius: 2px;
-    pointer-events: none;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #c07eb1;
+  transition: 0.5s;
+  border-radius: 2px;
+  pointer-events: none;
 }
 
 .container .row100 .inputBox input:focus ~ .line,
 .container .row100 .inputBox input:valid ~ .line {
-    height: 100%;
+  height: 100%;
 }
 
 .container .row100 .inputBox.textarea {
-    position: relative;
-    width: 100%;
-    height: 100px;
+  position: relative;
+  width: 100%;
+  height: 100px;
 }
 
 .container .row100 .inputBox.textarea textarea {
-    height: 100%;
-    resize: none;
+  height: 100%;
+  resize: none;
 }
 
 .container .row100 .inputBox textarea:focus ~ .text,
 .container .row100 .inputBox textarea:valid ~ .text {
-    top: -35px;
-    left: -10px;
+  top: -35px;
+  left: -10px;
 }
 
 .container .row100 .inputBox textarea:focus ~ .line,
 .container .row100 .inputBox textarea:valid ~ .line {
-    height: 100%;
+  height: 100%;
 }
 
 input[type="submit"] {
-    border: none;
-    padding: 7px 35px;
-    cursor: pointer;
-    outline: none;
-    background: #c07eb1;
-    color: #000;
-    font-size: 18px;
-    border-radius: 2px;
+  border: none;
+  padding: 7px 35px;
+  cursor: pointer;
+  outline: none;
+  background: #c07eb1;
+  color: #000;
+  font-size: 18px;
+  border-radius: 2px;
 }
 
 .icons {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .linkedin,
 .github {
-    margin: 5px;
-    transition: 0.5s;
-    cursor: pointer;
+  margin: 5px;
+  transition: 0.5s;
+  cursor: pointer;
 }
 .linkedin:hover {
-    color: #c07eb1;
-    transform: rotate(-360deg);
+  color: #c07eb1;
+  transform: rotate(-360deg);
 }
 
 .github:hover {
-    color: #c07eb1;
-    transform: rotate(360deg);
+  color: #c07eb1;
+  transform: rotate(360deg);
 }
 
 #mailSent {
+  padding-top: 10%;
+  min-height: 60vh;
+}
+
+
+@media screen and(max-width: 480px) {
+  .title-second {
+    padding: 0 10px;
+  }
+  .title-first {
+    padding: 0 14%;
+  }
+  .container {
+    width: 100%;
+  }
+  .contact-wrapper {
     padding-top: 10%;
-    min-height: 60vh;
+  }
 }
 
-
-@media screen and (max-width: 480px) {
-    .title-second {
-        padding: 0 10px;
-    }
-    .title-first {
-        padding: 0 14%;
-    }
-    .container {
-        width: 100%;
-    }
-    .contact-wrapper {
-        padding-top: 10%;
-    }
+@media only screen and(min-height: 750px) {
+  form {
+    padding-top: 10%;
+  }
+  .icons {
+    padding-top: 10%;
+  }
 }
 
-@media only screen and (min-height: 750px) {
-    form {
-        padding-top: 10%;
-    }
-    .icons {
-        padding-top: 10%;
-    }
-}
-
-@media only screen 
-  and (min-width: 1024px) 
-  and (max-height: 1366px) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
-    .container .row100 {
-        height: 180px;
-    }
+@media only screen and(min-width: 1024px) and(max-height: 1366px) and(-webkit-min-device-pixel-ratio: 1.5) {
+  .container .row100 {
+    height: 180px;
+  }
 }
